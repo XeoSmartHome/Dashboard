@@ -6,6 +6,9 @@ import {
 	Link
 } from "react-router-dom";
 
+import "materialize-css/dist/css/materialize.min.css";
+import "materialize-css/dist/js/materialize.min.js";
+
 
 export default function App() {
 	return (
@@ -44,7 +47,20 @@ export default function App() {
 }
 
 function Home() {
-	return <h2>Home</h2>;
+	return (
+		<div>
+			<table>
+				<th>
+					<td>index</td>
+					<td>value</td>
+				</th>
+				<tr>
+					<td>1</td>
+					<td>a</td>
+				</tr>
+			</table>
+		</div>
+	)
 }
 
 function About() {
